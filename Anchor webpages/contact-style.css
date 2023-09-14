@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: beige;
+    color: var(--mygreen);
+}
+
+:root {
+    --mygreen: rgb(17, 163, 83);
+    --myblue: rgb(14, 107, 214);
+    --myred: rgb(161, 20, 20);
+    --mygray: rgb(238, 238, 230);
+
+    --mygreen-hover: rgb(90, 207, 143);
+    --myblue-hover: rgb(47, 112, 185);
+    --myred-hover: rgb(189, 63, 63);
+    --mygray-hover: rgb(209, 209, 147);
+}
+
+.main-div {
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.title h1 {
+    transition: color 200ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.title h1:hover {
+    color: var(--myred);
+    transform: scale(1.2);
+    cursor: default;
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.img-div p {
+    color: black;
+}
+
+img {
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 0;
+}
+
+a:any-link {
+    color: var(--myblue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: lightskyblue;
+}
+
+.contact-details {
+    padding: 10px;
+    line-height: 1.4;
+}
+
+.contact-details h1 {
+    color: var(--myred);
+}
+
+.contact-details h1:hover {
+    color: var(--myred-hover);
+    cursor: default;
+}
+
+.contact-details h2 {
+    color: black;
+    font-weight: normal;
+    padding-left: 15px;
+}
+
+.contact-details a {
+    font-weight: normal;
+}

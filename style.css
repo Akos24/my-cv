@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: beige;
+    color: var(--mygreen);
+}
+
+:root {
+    --mygreen: rgb(17, 163, 83);
+    --myblue: rgb(14, 107, 214);
+    --myred: rgb(161, 20, 20);
+    --mygray: rgb(238, 238, 230);
+
+    --mygreen-hover: rgb(90, 207, 143);
+    --myblue-hover: rgb(47, 112, 185);
+    --myred-hover: rgb(189, 63, 63);
+    --mygray-hover: rgb(209, 209, 147);
+}
+
+.main-div {
+    width: 50%;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+}
+
+.name {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.name h1 {
+    transition: color 200ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.name h1:hover {
+    color: var(--myred);
+    transform: scale(1.2);
+    cursor: default;
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.img-div p {
+    color: black;
+}
+
+img { 
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+a:any-link {
+    color: var(--myblue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: lightskyblue;
+}
+
+main {
+    margin: 0 15px;
+}
+
+hr {
+    background-color: var(--myblue);
+    border: none;
+    height: 2px;
+    width: 50%
+}
+
+.main-title {
+    color: var(--mygreen)
+}
+
+.main-title h1:hover {
+    color: var(--mygreen-hover);
+    cursor: default;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.seg {
+    margin: 10px;
+    background-color: var(--mygray);
+    padding: 10px;
+}
+
+.subject {
+    color: var(--myred);
+}
+
+.subject:hover {
+    color: var(--myred-hover);
+    cursor: default;
+}
+
+.place, .city, .country, .website {
+    color: black;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+h4 {
+    padding: 10px;
+    color: var(--myblue);
+}
+
+.language-box {
+    background-color: var(--mygray);
+    margin: 10px;
+    padding: 10px;
+}
+
+.language {
+    color: var(--myred);
+}
+
+.language:hover {
+    color: var(--myred-hover);
+    cursor: default;
+}
+
+.listening, .spoken-production, .spoken-introduction, 
+.writing, .reading {
+    margin-left: 5px;
+    color: black;
+    font-weight: normal;
+}
+
+.digital-box {
+    padding: 10px;
+}
+
+.digital-box .digital-skills {
+    color: black;
+    font-size: 17px;
+}
+
+b:nth-child(even):hover {
+    color: var(--mygreen);
+    cursor: default;
+}
+
+b:nth-child(odd):hover {
+    color: var(--myred);
+    cursor: default;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+footer h3 {
+    font-weight: bold;
+    color: var(--myred);
+    padding: 10px;
+}
+
+footer h3:hover {
+    color: var(--myred-hover);
+    cursor: pointer;
+}
